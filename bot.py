@@ -14,10 +14,6 @@ async def on_ready():
 async def hello(ctx):
     await ctx.send(f'Hola, soy un bot {bot.user}!')
 
-@bot.command()
-async def heh(ctx, count_heh = 5):
-    await ctx.send("he" * count_heh)
-
 @bot.command(description='For when you wanna settle the score some other way')
 async def choose(ctx, *choices: str):
     """Chooses between multiple choices."""
